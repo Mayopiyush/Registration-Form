@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form action="submit_registration.php" method="POST">
+        <h2>Registration Form</h2>
+
+        <div class="tooltip">
+            <label for="first_name">First Name:</label>
+            <span class="tooltiptext">Enter your first name</span>
+        </div>
+        <input type="text" id="first_name" name="first_name" placeholder="John" required>
+
+        <div class="tooltip">
+            <label for="father_name">Father's Name:</label>
+            <span class="tooltiptext">Enter your father's name</span>
+        </div>
+        <input type="text" id="father_name" name="father_name" placeholder="Doe" required>
+
+        <div class="tooltip">
+            <label for="email">Email Address:</label>
+            <span class="tooltiptext">Enter your email</span>
+        </div>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>Male
+        <input type="radio" id="female" name="gender" value="Female">Female
+        <input type="radio" id="other" name="gender" value="Other">Other
+        <br><br>
+
+        <label for="courses">Courses:</label><br>
+        <input type="checkbox" name="courses" value="B.Tech"> B.Tech <br>
+        <input type="checkbox" name="courses" value="B.Pharma"> B.Pharma <br>
+        <input type="checkbox" name="courses" value="BCA"> BCA <br>
+        <input type="checkbox" name="courses" value="MCA"> MCA <br>
+        <br>
+
+        <div class="tooltip">
+            <label for="address">Address:</label>
+            <span class="tooltiptext">Enter your home address</span>
+        </div>
+        <textarea id="address" name="address" rows="4" placeholder="123 Main St, City, Country"></textarea>
+        <br>
+
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+
+</html>
